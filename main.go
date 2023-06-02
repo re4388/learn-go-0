@@ -9,10 +9,6 @@ import (
 	learn "hello/learn"
 )
 
-/*
-multi line
-comment*/
-
 ////////////////////////////////////////
 
 func main() {

@@ -1,11 +1,7 @@
-## learning
+# Learning Go
 
 
 ## how to run?
-
-
-### test
-- go to test file, just use IDE hint to run
 - build
   ```
   go build
@@ -15,6 +11,11 @@
   ```
   go run main.go
   ```
+
+
+### test
+- go to test file, just use IDE hint to run
+
 
 ## reference
 
@@ -34,7 +35,7 @@
   - [bitfield/script: Making it easy to write shell-like scripts in Go](https://github.com/bitfield/script)
 ### more tutorial
   - [A Tour of Go](https://go.dev/tour/concurrency/11)
-### using a 3rd party library
+### db related
   - postgres(like typeorm in ts)
     - [go-gorm/gorm: The fantastic ORM library for Golang, aims to be developer friendly](https://github.com/go-gorm/gorm?utm_campaign=awesomego&utm_medium=referral&utm_source=awesomego)
   - redis (like ioredis in ts)
@@ -49,6 +50,7 @@
   - [Welcome - urfave/cli](https://cli.urfave.org/)
 ### a web server app using a framework
   - [gin-gonic/gin: Gin is a HTTP web framework written in Go (Golang). It features a Martini-like API with much better performance -- up to 40 times faster. If you need smashing performance, get yourself some Gin.](https://github.com/gin-gonic/gin?utm_campaign=awesomego&utm_medium=referral&utm_source=awesomego)
+  - [gofiber/fiber: ⚡️ Express inspired web framework written in Go](https://github.com/gofiber/fiber)
 ### vid
   - Golang University 101 introduces fundamental Go concepts and shows you how to use the Go tools to create and manage Go code: https://www.youtube.com/playlist?list=PLEcwzBXTPUE9V1o8mZdC9tNnRZaTgI-1P
   - Golang University 201 steps it up a notch, explaining important techniques like testing, web services, and APIs: https://www.youtube.com/playlist?list=PLEcwzBXTPUE_5m_JaMXmGEFgduH8EsuTs

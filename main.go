@@ -1,11 +1,7 @@
-// 2 way to run
-// go build and run the binary
-// or
-// go run main.go
-
 package main
 
 import (
+	httpclients "hello/httpclients"
 	learn "hello/learn"
 )
 
@@ -38,8 +34,12 @@ func main() {
 	// learn.LearnTypes()
 	// learn.LearnInterfaces()
 	// learn.LearnConcurrency()
-	// learn.PrintCircle()
 	// learn.LearnErrorHandling()
 	// learn.LearnControlFlow()
-	learn.RunTime()
+	// learn.RunTime()
+	learn.PrintCircle()
+
+	// httpclients.RUN_GoHttpClient()
+	httpclients.RUN_restry()
+
 }

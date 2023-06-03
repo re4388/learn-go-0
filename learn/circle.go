@@ -1,6 +1,8 @@
 package learn
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Circle struct {
 	Radius float64

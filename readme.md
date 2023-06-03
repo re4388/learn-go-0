@@ -24,13 +24,19 @@
 - [A Tour of Go](https://go.dev/tour/concurrency/11)
 - [A curated list of awesome Go frameworks, libraries and software - Awesome Go / Golang](https://awesome-go.com/)
 - [Standard library - Go Packages](https://pkg.go.dev/std)
+- [public-apis/public-apis: A collective list of free APIs](https://github.com/public-apis/public-apis)
+- [Scripting with Go — Bitfield Consulting](https://bitfieldconsulting.com/golang/scripting)
+- [11 Solutions to Exercises in GoLang Tour | by NMTechBytes | Medium](https://medium.com/@anumsarmadmalik/11-solutions-togolang-tours-exercises-7ee61b7b94f5)
+### Go scripting
 
 
 ## todo
+### awesome go
+- [A curated list of awesome Go frameworks, libraries and software - Awesome Go / Golang](https://awesome-go.com/)
+
+###
+  - [google/wire: Compile-time Dependency Injection for Go](https://github.com/google/wire)
 ### seems a good article
-- [An API client in Go — Bitfield Consulting](https://bitfieldconsulting.com/golang/api-client)
-- [Scripting with Go — Bitfield Consulting](https://bitfieldconsulting.com/golang/scripting)
-### Go scripting
   - [Scripting with Go — Bitfield Consulting](https://bitfieldconsulting.com/golang/scripting)
   - [bitfield/script: Making it easy to write shell-like scripts in Go](https://github.com/bitfield/script)
 ### more tutorial
@@ -106,6 +112,9 @@ go build
 
 # run it
 ./hello
+
+## install external lib
+go get -u github.com/bozd4g/go-http-client/
 
 ```
 

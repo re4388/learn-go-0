@@ -1,6 +1,12 @@
 package learn
 
-import "fmt"
+import (
+	"fmt"
+	"io"
+	"math"
+	"os"
+	"strings"
+)
 
 type Logger interface {
 	Log() string
@@ -170,4 +176,92 @@ func SeePerson() {
 	a := Person{"Arthur Dent", 42}
 	z := Person{"Zaphod Beeblebrox", 9001}
 	fmt.Println(a, z)
+}
+
+///////////
+
+/*
+Make the IPAddr type implement fmt.Stringer to print the address as a dotted quad.
+*/
+
+type IPAddr [4]byte
+
+func (ia IPAddr) String() string {
+	return fmt.Sprintf("%d %d %d %d", ia[0], ia[1], ia[2], ia[3])
+}
+func UseIpAddr() {
+	hosts := map[string]IPAddr{
+		"loopback":  {127, 0, 0, 1},
+		"googleDNS": {8, 8, 8, 8},
+	}
+	for name, ip := range hosts {
+		fmt.Printf("%v: %v\n", name, ip)
+	}
+}
+
+/*
+Sqrt should return a non-nil error value when given a negative number, as it doesn't support complex numbers.
+*/
+
+type ErrNegativeSqrt float64
+
+func (e ErrNegativeSqrt) Error() string {
+	return fmt.Sprintf("cannot Sqrt negative number: %f", e)
+}
+
+func Sqrt(x float64) (float64, error) {
+
+	if x < 0 {
+		return 0, ErrNegativeSqrt(x)
+	}
+
+	z := float64(1)
+	tolerance := 1e-6
+
+	for {
+		prevZ := z
+		z -= (z*z - x) / (2 * z)
+		if math.Abs(z-prevZ) < tolerance {
+			break
+		}
+	}
+	return z, nil
+}
+func Run_Sqrt() {
+	fmt.Println(Sqrt(2))
+	fmt.Println(Sqrt(-2))
+}
+
+/*
+Implement a rot13Reader that implements io.Reader and reads from an io.Reader,
+modifying the stream by applying the rot13 substitution cipher to all alphabetical characters
+*/
+
+type rot13Reader struct {
+	reader io.Reader
+}
+
+func (rd *rot13Reader) Read(b []byte) (n int, err error) {
+
+	n, err = rd.reader.Read(b)
+
+	for i := 0; i < len(b); i++ {
+
+		char := b[i]
+
+		if (char >= 'a' && char <= 'm') || (char >= 'A' && char <= 'M') {
+			b[i] += 13
+		} else if (char >= 'n' && char <= 'z') || (char >= 'N' && char <= 'Z') {
+			b[i] -= 13
+		}
+	}
+
+	// named return
+	return
+
+}
+func Run_rot13() {
+	str := strings.NewReader("Lbh penpxrq gur pbqr!")
+	reader := rot13Reader{str}
+	io.Copy(os.Stdout, &reader)
 }

@@ -9,30 +9,7 @@ import (
 ////////////////////////////////////////
 
 func main() {
-
-	// fmt.Printf("Hello world")
-	// c1()
 	// acc.RunAccount1()
-	// httpServer()
-	// learnTypes()
-
-	// fmt.Println(learnNamedReturns(3, 4))
-
-	// createFile("tmp")
-	// learnControlFlow()
-
-	// learnFunctionFactory()
-	// learnInterfaces()
-
-	// learnVariadicParams("great", "learning", "here!")
-
-	// learnErrorHandling()
-
-	// learnConcurrency()
-
-	// util.LearnWebProgramming()
-	// util.HttpServerV2()
-
 	// learn.LearnTypes()
 	// learn.LearnInterfaces()
 	// learn.LearnConcurrency()
@@ -41,7 +18,12 @@ func main() {
 	// learn.RunTime()
 	// learn.PrintCircle()
 	// learn.UseComponent()
-	learn.RunUrlPool()
+	// learn.RunUrlPool()
+	// learn.Run_Cli()
+	// learn.Run_wordCount()
+	// learn.Run_rot13()
+	// learn.Is_the_same_tree()
+	learn.Run_WebCrawler()
 
 	// httpclients.RUN_GoHttpClient()
 	// httpclients.RUN_restry()

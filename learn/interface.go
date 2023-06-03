@@ -2,6 +2,24 @@ package learn
 
 import "fmt"
 
+type Logger interface {
+	Log() string
+}
+
+type Component struct {
+	x, y int
+}
+
+func (c Component) Log() string {
+	return fmt.Sprintf("(%d, %d)", c.x, c.y)
+}
+
+func UseComponent() {
+	c1 := Component{1, 2}
+	res := c1.Log()
+	fmt.Println(res)
+}
+
 // Define Stringer as an interface type with one method, String.
 type Stringer interface {
 	String() string

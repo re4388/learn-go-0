@@ -1,13 +1,15 @@
 package main
 
 import (
-	httpclients "hello/httpclients"
-	learn "hello/learn"
+	// httpclients "hello/httpclients"
+
+	"hello/learn"
 )
 
 ////////////////////////////////////////
 
 func main() {
+
 	// fmt.Printf("Hello world")
 	// c1()
 	// acc.RunAccount1()
@@ -37,9 +39,11 @@ func main() {
 	// learn.LearnErrorHandling()
 	// learn.LearnControlFlow()
 	// learn.RunTime()
-	learn.PrintCircle()
+	// learn.PrintCircle()
+	// learn.UseComponent()
+	learn.RunUrlPool()
 
 	// httpclients.RUN_GoHttpClient()
-	httpclients.RUN_restry()
+	// httpclients.RUN_restry()
 
 }

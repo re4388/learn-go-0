@@ -9,7 +9,7 @@ import (
 	"github.com/bitfield/script"
 )
 
-func Run_Cli() {
+func Run_script() {
 	cwd, err := os.Getwd()
 	if err != nil {
 		log.Fatal(err)

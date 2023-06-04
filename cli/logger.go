@@ -1,4 +1,4 @@
-package db
+package cli
 
 import (
 	"github.com/rs/zerolog"
@@ -11,5 +11,5 @@ func Run_Log() {
 	zerolog.TimeFieldFormat = zerolog.TimeFormatUnix
 
 	// log.Print("learn package is loaded")
-	log.Info().Msg("db package is loaded")
+	log.Info().Msg("cli package is loaded")
 }

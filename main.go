@@ -4,6 +4,7 @@ import (
 	// httpclients "hello/httpclients"
 
 	"fmt"
+	"hello/cli"
 	"hello/db"
 	"hello/learn"
 	"hello/server"
@@ -13,10 +14,11 @@ import (
 
 func main() {
 	// log
-	learn.Run_LearnLog()
-	server.Run_serverLog()
-	db.Run_dbLog()
-	fmt.Println("==========\n")
+	learn.Run_Log()
+	server.Run_Log()
+	db.Run_Log()
+	cli.Run_Log()
+	fmt.Println("==========")
 
 	///////////
 	// acc.RunAccount1()
@@ -36,9 +38,14 @@ func main() {
 	// learn.Run_WebCrawler()
 	// learn.RUN_CO4()
 
+	// cli.Run_cli0()
+	// cli.RUN_bubbleTea()
+	// cli.RUN_bubbleTea1()
+	cli.RUN_bubbleTea_result()
+
 	///////////
 	// learn.RUN_interface1()
-	db.RUN_sqlite0()
+	// db.RUN_sqlite0()
 
 	// server.RUN_GIN_01()
 	// server.RunWebSocketServer()

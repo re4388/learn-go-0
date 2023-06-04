@@ -6,6 +6,7 @@
         "restry",
         "Resty",
         "Upgrader",
+        "urfave",
         "vals"
     ]
 }

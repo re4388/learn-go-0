@@ -8,6 +8,8 @@ import (
 	"strings"
 )
 
+/////////////////
+
 type Logger interface {
 	Log() string
 }

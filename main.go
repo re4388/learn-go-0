@@ -3,6 +3,7 @@ package main
 import (
 	// httpclients "hello/httpclients"
 
+	"fmt"
 	"hello/learn"
 	"hello/server"
 )
@@ -10,6 +11,12 @@ import (
 ////////////////////////////////////////
 
 func main() {
+	// log
+	learn.Run_LearnLog()
+	server.Run_serverLog()
+	fmt.Println("==========\n")
+
+	///////////
 	// acc.RunAccount1()
 	// learn.LearnTypes()
 	// learn.LearnInterfaces()
@@ -26,8 +33,12 @@ func main() {
 	// learn.Is_the_same_tree()
 	// learn.Run_WebCrawler()
 	// learn.RUN_CO4()
-	learn.Run_Log()
-	server.RUN_GIN_01()
+
+	///////////
+	learn.RUN_interface1()
+
+	// server.RUN_GIN_01()
+	// server.RunWebSocketServer()
 
 	// httpclients.RUN_GoHttpClient()
 	// httpclients.RUN_restry()

@@ -4,6 +4,7 @@
         "httpclients",
         "restry",
         "Resty",
+        "Upgrader",
         "vals"
     ]
 }

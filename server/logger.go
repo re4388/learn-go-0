@@ -1,24 +1,17 @@
-package learn
+package server
 
 import (
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 )
 
-func Run_LearnLog() {
+func Run_serverLog() {
 
 	// UNIX Time is faster and smaller than most timestamps
 	zerolog.TimeFieldFormat = zerolog.TimeFormatUnix
 
 	// log.Print("learn package is loaded")
-	log.Info().Msg("learn package is loaded")
-
-	// log.Debug().
-	// 	Str("Scale", "833 cents").
-	// 	Float64("Interval", 833.09).
-	// 	Msg("Fibonacci is everywhere")
-
-	// log.Debug().
+	log.Info().Msg("server package is loaded")
 	// 	Str("Name", "Tom").
 	// 	Send()
 

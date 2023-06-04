@@ -37,12 +37,15 @@
 
 ## todo
 ### awesome go
-- [A curated list of awesome Go frameworks, libraries and software - Awesome Go / Golang](https://awesome-go.com/)
+  - [A curated list of awesome Go frameworks, libraries and software - Awesome Go / Golang](https://awesome-go.com/)
 
 ### book alike
-- [Effective Go - The Go Programming Language](https://go.dev/doc/effective_go)
+  - [Effective Go - The Go Programming Language](https://go.dev/doc/effective_go)
 
-###
+### FreeCodeCamp
+  - to learn by choose needed topic and project
+  - vid: [(106) Go Programming – Golang Course with Bonus Projects - YouTube](https://www.youtube.com/watch?v=un6ZyFkqFKo)
+  - src: [bootdotdev/fcc-learn-golang-assets: A snapshot of the assets for the Learn Go course on FreeCodeCamp's youtube](https://github.com/bootdotdev/fcc-learn-golang-assets)
 ### Dependency Injection
   - [google/wire: Compile-time Dependency Injection for Go](https://github.com/google/wire)
 

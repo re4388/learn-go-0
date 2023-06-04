@@ -25,20 +25,27 @@
 - [A curated list of awesome Go frameworks, libraries and software - Awesome Go / Golang](https://awesome-go.com/)
 - [Standard library - Go Packages](https://pkg.go.dev/std)
 - [public-apis/public-apis: A collective list of free APIs](https://github.com/public-apis/public-apis)
-- [Scripting with Go — Bitfield Consulting](https://bitfieldconsulting.com/golang/scripting)
 - [11 Solutions to Exercises in GoLang Tour | by NMTechBytes | Medium](https://medium.com/@anumsarmadmalik/11-solutions-togolang-tours-exercises-7ee61b7b94f5)
-### Go scripting
-
+### scripting
+  - [bitfield/script: Making it easy to write shell-like scripts in Go](https://github.com/bitfield/script)
+### log
+  - [uber-go/zap: Blazing fast, structured, leveled logging in Go.](https://github.com/uber-go/zap)
+  - [rs/zerolog: Zero Allocation JSON Logger](https://github.com/rs/zerolog)
+  - [golang/glog: Leveled execution logs for Go](https://github.com/golang/glog)
+  - [sirupsen/logrus: Structured, pluggable logging for Go.](https://github.com/Sirupsen/logrus)
+  
 
 ## todo
 ### awesome go
 - [A curated list of awesome Go frameworks, libraries and software - Awesome Go / Golang](https://awesome-go.com/)
 
+### book alike
+- [Effective Go - The Go Programming Language](https://go.dev/doc/effective_go)
+
 ###
+### Dependency Injection
   - [google/wire: Compile-time Dependency Injection for Go](https://github.com/google/wire)
-### seems a good article
-  - [Scripting with Go — Bitfield Consulting](https://bitfieldconsulting.com/golang/scripting)
-  - [bitfield/script: Making it easy to write shell-like scripts in Go](https://github.com/bitfield/script)
+
 ### more tutorial
   - [A Tour of Go](https://go.dev/tour/concurrency/11)
 ### db related
@@ -115,6 +122,18 @@ go build
 
 ## install external lib
 go get -u github.com/bozd4g/go-http-client/
+
+
+## hotreload if using webserver
+
+- https://github.com/codegangsta/gin
+  - a cli tool
+  - ur local webserver will use gin as a proxy
+  - and gin auto detect your code change and recompile your code
+
+
+gin run main.go
+
 
 ```
 

@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"hello/cli"
 	"hello/db"
+	"hello/httpclients"
 	"hello/learn"
 	"hello/server"
 )
@@ -18,6 +19,7 @@ func main() {
 	server.Run_Log()
 	db.Run_Log()
 	cli.Run_Log()
+	httpclients.Run_Log()
 	fmt.Println("==========")
 
 	///////////
@@ -41,7 +43,10 @@ func main() {
 	// cli.Run_cli0()
 	// cli.RUN_bubbleTea()
 	// cli.RUN_bubbleTea1()
-	cli.RUN_bubbleTea_result()
+	// cli.RUN_bubbleTea_result()
+
+	// httpclients.RUN_restry()
+	learn.RUN_fmt()
 
 	///////////
 	// learn.RUN_interface1()
